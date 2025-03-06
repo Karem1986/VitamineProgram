@@ -1,4 +1,4 @@
-class vitamineAsosRoutine:
+class VitamineAsosRoutine:
     def __init__(self, updateFreq="", updateVitType="", type="", frequency=""):
         self.frequency = frequency
         self.type = type
@@ -20,11 +20,11 @@ class vitamineAsosRoutine:
         return self.updateFreq
 
 # Create an instance of vitamine's routine
-routine = vitamineAsosRoutine("mornings")
+routine = VitamineAsosRoutine("mornings")
 # print(routine.display_routine())
-type = vitamineAsosRoutine("D3")
+type = VitamineAsosRoutine("D3")
 # print(type.vitamine_type())
-update_VitaminType = vitamineAsosRoutine("B12")
+update_VitaminType = VitamineAsosRoutine("B12")
 # print(update_VitaminType.update_vitamine_type())
-updateFrequency = vitamineAsosRoutine("evenings")
+updateFrequency = VitamineAsosRoutine("evenings")
 print(updateFrequency.update_frequency())
