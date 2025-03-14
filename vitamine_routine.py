@@ -5,8 +5,7 @@ class VitamineAsosRoutine:
         self.type = type
         self.updateVitType = updateVitType
         self.updateFreq = updateFreq
-    # The self keyqord is used to access the attributes and methods of the class, the object we are creating. 
-    # routine for asos's vitamine
+    # The self keyword is used to access the attributes and methods of the class, the object we are creating. 
     def display_frequency(self):
         return self.frequency
     # vitamine type
@@ -19,7 +18,7 @@ class VitamineAsosRoutine:
     def update_frequency(self):
         return self.updateFreq
 
-# Create an instance of vitamine's routine
+# Create an instance of vitamine's routine and call only what you need
 routine = VitamineAsosRoutine(frequency="mornings")
 print(routine.display_frequency())
 vit_type = VitamineAsosRoutine(type="Vitamine C")
