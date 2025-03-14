@@ -19,7 +19,7 @@ class VitamineAsosRoutine:
         return self.updateFreq
 
 # Create an instance of vitamine's routine
-routine = VitamineAsosRoutine(updateFreq="", updateVitType="", type="", frequency="mornings")
+routine = VitamineAsosRoutine(frequency="mornings")
 print(routine.display_frequency())
 # print(routine.vitamine_type())
 # print(routine.update_vitamine_type())
