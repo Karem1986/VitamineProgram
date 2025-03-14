@@ -6,8 +6,7 @@ class VitamineAsosRoutine:
         self.updateFreq = updateFreq
 
     # routine for asos's vitamine
-    def display_routine(self):
-        print("How many times a day Asos wants his vitamine?")
+    def display_frequency(self):
         return self.frequency
     # vitamine type
     def vitamine_type(self):
@@ -20,11 +19,8 @@ class VitamineAsosRoutine:
         return self.updateFreq
 
 # Create an instance of vitamine's routine
-routine = VitamineAsosRoutine("mornings")
-# print(routine.display_routine())
-type = VitamineAsosRoutine("D3")
-# print(type.vitamine_type())
-update_VitaminType = VitamineAsosRoutine("B12")
-# print(update_VitaminType.update_vitamine_type())
-updateFrequency = VitamineAsosRoutine("evenings")
-print(updateFrequency.update_frequency())
+routine = VitamineAsosRoutine(updateFreq="", updateVitType="", type="", frequency="mornings")
+print(routine.display_frequency())
+# print(routine.vitamine_type())
+# print(routine.update_vitamine_type())
+# print(routine.update_frequency())
